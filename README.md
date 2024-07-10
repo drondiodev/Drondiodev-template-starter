@@ -23,7 +23,9 @@ Drondiodev-template est un template Next.js prêt à l'emploi, conçu pour vous 
 
 1. Clonez le dépôt sur votre machine locale :
 
-git clone [adresse du repo git]
+```bash
+git clone https://github.com/drondiodev/Drondiodev-template.git
+```
 
 2. Accédez au répertoire du projet :
 
@@ -31,10 +33,14 @@ cd drondiodev-template
 
 3. Installez les dépendances du projet avec pnpm :
 
+```bash
 pnpm install
+```
 
 4. Démarrez le serveur de développement :
 
+```bash
 pnpm dev
+```
 
 Votre application Next.js sera alors accessible à l'adresse http://localhost:3000.
