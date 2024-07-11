@@ -1,3 +1,6 @@
+![](https://visitor-badge.laobi.icu/badge?page_id=drondiodev.Drondiodev-template-starter)
+
+
 # Drondiodev-template
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/drondiodev/Drondiodev-template) ![GitHub forks](https://img.shields.io/github/forks/drondiodev/Drondiodev-template) ![GitHub Repo stars](https://img.shields.io/github/stars/drondiodev/Drondiodev-template) ![GitHub watchers](https://img.shields.io/github/watchers/drondiodev/Drondiodev-template)
