@@ -1,4 +1,4 @@
-![](https://visitor-badge.laobi.icu/badge?page_id=drondiodev.drondiodev)
+![](https://visitor-badge.laobi.icu/badge?page_id=drondiodev.drondiodev-template-starter)
 
 
 # Drondiodev-template
