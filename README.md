@@ -1,4 +1,13 @@
+<<<<<<< HEAD
+
 # Drondiodev-template-starter
+
+=======
+![](https://visitor-badge.laobi.icu/badge?page_id=drondiodev.drondiodev-template-starter)
+
+# Drondiodev-template
+
+> > > > > > > 5749765da202ee305438ff69b3aa3fa4fc05912c
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/drondiodev/Drondiodev-template)
 ![GitHub forks](https://img.shields.io/github/forks/drondiodev/Drondiodev-template)
