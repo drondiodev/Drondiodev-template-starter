@@ -34,6 +34,10 @@ productivité.
   préconfigurés pour maintenir une base de code cohérente et lisible.
 - **Husky et Lint-Staged** : Des hooks de Git pour exécuter automatiquement les
   vérifications de lint et de formatage avant chaque commit.
+- **cz-customizable** : Permet de personnaliser les messages de commit en
+  utilisant des conventions spécifiques. Il s'intègre avec Commitizen pour
+  fournir une interface interactive lors de la création de commits, ce qui aide
+  à maintenir des messages de commit cohérents et significatifs.
 
 ## Utilisation
 
