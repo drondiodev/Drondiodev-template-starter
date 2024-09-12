@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+import Footer from '@/components/footer'
+import Header from '@/components/header'
+
 import './globals.css'
 import siteConfig from '@/config/site'
 
@@ -34,18 +37,19 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     siteName: siteConfig.name,
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [`${siteConfig.url}/og`],
-    creator: 'compte twitter',
-  },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: 'apple-touch-icon.png',
-  },
+  // twitter: {
+  //   card: 'summary_large_image',
+  //   title: siteConfig.name,
+  //   description: siteConfig.description,
+  //   images: [`${siteConfig.url}/og`],
+  //   creator: 'compte twitter',
+  // },
+  // --- A ajouter dès que vous avez un logo ---
+  // icons: {
+  //   icon: '/favicon.ico',
+  //   shortcut: '/favicon-16x16.png',
+  //   apple: 'apple-touch-icon.png',
+  // },
   // metadataBase: new URL(siteConfig.url),
 }
 
@@ -55,8 +59,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr" className={inter.className}>
+      <body className="font-sans tracking-tight text-gray-900 antialiased">
+        <div className="flex min-h-screen flex-col overflow-hidden">
+          <Header />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }
