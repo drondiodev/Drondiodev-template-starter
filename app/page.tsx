@@ -1,59 +1,47 @@
-import Link from 'next/link'
+/* eslint-disable react/jsx-props-no-spreading */
+
+export function GitHubIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>GitHub</title>
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+    </svg>
+  )
+}
+
+export function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg role="img" viewBox="0 0 24 24" {...props}>
+      <path
+        d="M20.25 3H3.75C3.3 3 3 3.3 3 3.75V20.25C3 20.7 3.3 21 3.75 21H20.25C20.7 21 21 20.7 21 20.25V3.75C21 3.3 20.7 3 20.25 3ZM8.325 18.375H5.7V9.75H8.4V18.375H8.325ZM6.975 8.55C6.15 8.55 5.4 7.875 5.4 6.975C5.4 6.15 6.075 5.4 6.975 5.4C7.8 5.4 8.55 6.075 8.55 6.975C8.55 7.875 7.875 8.55 6.975 8.55ZM18.375 18.375H15.675V14.175C15.675 13.2 15.675 11.925 14.325 11.925C12.9 11.925 12.75 12.975 12.75 14.1V18.375H10.05V9.75H12.6V10.95C12.975 10.275 13.8 9.6 15.15 9.6C17.85 9.6 18.375 11.4 18.375 13.725V18.375Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
 
 export default function Home() {
   return (
-    <section className="py-14">
-      <div className="flex flex-col justify-center items-center mx-auto px-4 md:px-8">
-        <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-          Next.js Starter template
+    <section className="flex h-full flex-col items-center justify-center pt-20">
+      <div className="flex w-full max-w-lg flex-col items-center justify-center text-center">
+        <h1 className="relative mb-4 text-4xl font-medium text-zinc-950">
+          NextJS Boilerplate
         </h1>
-        <p className="mt-3 text-gray-600">
+        <p className="text-center text-zinc-600">
           Template de configuration d&apos;un projet Next.Js avec Typescript,
           ESLint, Airbnb, Prettier, Husky, scopes de commit personnalisés et
           Lint Staged.
         </p>
-        <Link
-          className="mt-5 inline-flex gap-2 cursor-pointer items-center justify-center font-medium px-3 rounded-md bg-slate-200/15 hover:bg-slate-300"
-          data-rac=""
-          href="https://github.com/drondiodev/Drondiodev-template-starter"
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-sparkles "
-          >
-            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-            <path d="M5 3v4" />
-            <path d="M19 17v4" />
-            <path d="M3 5h4" />
-            <path d="M17 19h4" />
-          </svg>
-          <span className="truncate">Donner une étoile au répo </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-arrow-right "
-          >
-            <path d="M5 12h14" />
-            <path d="m12 5 7 7-7 7" />
-          </svg>
-        </Link>
       </div>
+
+      <span className="mt-2 text-center text-sm text-zinc-500 dark:text-zinc-400">
+        Free updates and new components released regularly.
+      </span>
     </section>
   )
 }
